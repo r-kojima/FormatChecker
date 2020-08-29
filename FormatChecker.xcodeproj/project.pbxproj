@@ -10,6 +10,7 @@
 		BFB6E99F24F7E76500DC0005 /* FormatChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB6E99524F7E76500DC0005 /* FormatChecker.framework */; };
 		BFB6E9A424F7E76500DC0005 /* FormatCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6E9A324F7E76500DC0005 /* FormatCheckerTests.swift */; };
 		BFB6E9A624F7E76500DC0005 /* FormatChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB6E99824F7E76500DC0005 /* FormatChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFB6E9B024F7EFA600DC0005 /* FormatChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6E9AF24F7EFA600DC0005 /* FormatChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BFB6E99E24F7E76500DC0005 /* FormatCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormatCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB6E9A324F7E76500DC0005 /* FormatCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatCheckerTests.swift; sourceTree = "<group>"; };
 		BFB6E9A524F7E76500DC0005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB6E9AF24F7EFA600DC0005 /* FormatChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				BFB6E99824F7E76500DC0005 /* FormatChecker.h */,
+				BFB6E9AF24F7EFA600DC0005 /* FormatChecker.swift */,
 				BFB6E99924F7E76500DC0005 /* Info.plist */,
 			);
 			path = FormatChecker;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					BFB6E99424F7E76500DC0005 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					BFB6E99D24F7E76500DC0005 = {
 						CreatedOnToolsVersion = 11.4;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB6E9B024F7EFA600DC0005 /* FormatChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		BFB6E9AA24F7E76500DC0005 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3X79K6BFM6;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.r-kojima.FormatChecker";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		BFB6E9AB24F7E76500DC0005 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3X79K6BFM6;
@@ -388,6 +396,7 @@
 		BFB6E9AD24F7E76500DC0005 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X79K6BFM6;
 				INFOPLIST_FILE = FormatCheckerTests/Info.plist;
@@ -406,6 +415,7 @@
 		BFB6E9AE24F7E76500DC0005 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X79K6BFM6;
 				INFOPLIST_FILE = FormatCheckerTests/Info.plist;
