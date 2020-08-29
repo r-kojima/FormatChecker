@@ -4,4 +4,4 @@ notifications:
   email: false
 
 script:
-    - xcodebuild test -configuration Debug | xcpretty -c
+    - xcodebuild test -scheme FormatChecker -configuration Debug | xcpretty -c
