@@ -1,0 +1,7 @@
+language: swift
+osx_image: xcode11.6
+notifications:
+  email: false
+
+script:
+    - xcodebuild test -configuration Debug | xcpretty -c
